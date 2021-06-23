@@ -1,8 +1,27 @@
 {
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "autoprefixer": "^10.2.6",
+    "live-server": "^1.2.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   },
-  "scripts" : {
-    "serve" : "live-server ."
-  }
+  "scripts": {
+    "dev": "live-server .",
+    "build-css": "npx tailwindcss-cli@latest build src/style.css -o dist/style.css"
+  },
+  "name": "fy21cy2-sp3-codewarriors-spotify",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkhem/fy21cy2-sp3-codewarriors-spotify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkhem/fy21cy2-sp3-codewarriors-spotify/issues"
+  },
+  "homepage": "https://github.com/davidkhem/fy21cy2-sp3-codewarriors-spotify#readme"
 }
