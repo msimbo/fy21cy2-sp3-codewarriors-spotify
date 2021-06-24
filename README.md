@@ -11,6 +11,7 @@
 * tailwindcss.com
 * heroicons.com
 * fonts.google.com
+* [musicbrainz.org](https://musicbrainz.org)
 
 ## Contributors
 * David Khem
