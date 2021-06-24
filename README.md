@@ -6,13 +6,15 @@
 ## Process and Solution
 
 ## Languages
+* HTML
+* CSS
 
 ## Resources
-* tailwindcss.com
-* heroicons.com
-* fonts.google.com
+* [tailwindcss.com]()
+* [heroicons.com]()
+* [fonts.google.com]()
 * [musicbrainz.org](https://musicbrainz.org)
 
 ## Contributors
-* David Khem
-* Gregory Francis
+* David Khem [GitHub]()
+* Gregory Francis [GitHub]()
