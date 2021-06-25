@@ -9,10 +9,10 @@
     <title>Playlist 2</title>
 </head>
 <body>
-<div class="bg-gray-700 h-screen">
+<div class="bg-gray-900 h-screen">
     <div class="flex h-5/6">
         <!-- left navigation menu -->
-        <div class="bg-gray-900 w-52 h-full flex-none">
+        <div class="bg-black w-52 h-full flex-none">
             <div class="mx-2">
                 <button class="w-full rounded px-3 pt-10 py-2 flex items-center justify-start">
                     <img src="images/icons/home_white_24dp.svg" alt="home">
@@ -45,11 +45,11 @@
             <hr>
             <br>
             <div class="pl-5 text-white">
-                <ul class="mb-4">
+                <ul class="space-y-5">
                     <li><a href="playlist1.html">Playlist 1</a></li>
-                    <li><a href="#">Playlist 3</a></li>
-                    <li><a href="#">Playlist 4</a></li>
-                    <li><a href="#">Playlist 5</a></li>
+                    <li><a href="#">Rap Caviar</a></li>
+                    <li><a href="#">Music mix #1</a></li>
+                    <li><a href="#">Music mix #2</a></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +77,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
-                    <h1 class="text-white pl-2 font-size ">My Playlist</h1>
+                    <h1 class="text-white pl-2 text-3xl font-bold">My Playlist 2</h1>
                 </div>
 
                 <div class="relative">
@@ -94,27 +94,49 @@
             <!--//fixed header end -->
             <!-- body begin -->
             <div>
-                <div class="bg-gray-700 px-6 py-3 flex items-center">
+                <div class="bg-gray-900 px-6 py-3 flex items-center">
                     <h1 class="font-extrabold text-white hover:underline">Let's find something for your playlist</h1>
                 </div>
 
-                <div class="ml-20">
+                <div class="ml-6">
                     <label>
-                        <input type="search">
+                        <input class="bg-gray-600 w-72 pl-2" type="search" placeholder="search">
                     </label>
                 </div>
 
-                <div class="bg-gray-700 grid grid-cols-1 p-16 justify-evenly">
-                    <div class="p-4">
-                        <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
+                <div class="bg-gray-900 grid grid-cols-1 p-16 justify-evenly">
+                    <div class="p-4 flex justify-between">
+                        <div class="bg-gray-900 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
                             <img src="images/covers/2001-dr.dre.jpg" alt="dr.dre" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                            <h1>Release Radar</h1>
+                          <div class="flex-col">
+                            <h1>2001</h1>
+                            <h1 class="text-xs text-white tracking-wide">Dr. Dre</h1>
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                            <h1 class="text-sm text-white tracking-wide">Dr. Dre</h1>
+                        </div>
+                        <div class="flex items-center text-sm text-white tracking-wide">
+                            <button class="bg-black rounded-full py-1 px-5 flex items-center border-2 border-gray-600">
+                                <a href="#" class="text-white font-bold text-xs mr-2">Add</a>
+                            </button>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                            <img src="images/covers/mmlp-eminem.jpg" alt="eminem" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                            <h1>Crimetown</h1>
+                    <div class="p-4 flex justify-between">
+                        <div class="bg-gray-900 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
+                            <img src="images/covers/theartofwar-btnh.jpg" alt="bone-thugs" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
+                            <div class="flex-col">
+                                <h1>The Art of War</h1>
+                                <h1 class="text-xs text-white tracking-wide">Bone Thugs-N-Harmony</h1>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <h1 class="text-sm text-white tracking-wide">Bone Thugs-N-Harmony</h1>
+                        </div>
+                        <div class="flex items-center text-sm text-white tracking-wide">
+                            <button class="bg-black rounded-full py-1 px-5 flex items-center border-2 border-gray-600">
+                                <a href="#" class="text-white font-bold text-xs mr-2">Add</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -128,10 +150,10 @@
     <!-- footer -->
     <div class="bg-gray-800 flex justify-between items-center w-full h-1/6 px-3 border-t border-dark">
         <div class="flex items-center">
-            <img src="images/warriors-logo.jpg" alt="cover" class="w-16 h-16 mr-5">
+            <img src="images/covers/starboy-the-weeknd.jpg" alt="cover" class="w-16 h-16 mr-5">
             <div>
-                <h1 class="text-sm text-white tracking-wide">Lowlander Remix</h1>
-                <h1 class="text-xs text-white tracking-wide">Botanicals</h1>
+                <h1 class="text-sm text-white tracking-wide">Starboy</h1>
+                <h1 class="text-xs text-white tracking-wide">The Weeknd</h1>
             </div>
 
             <button>
