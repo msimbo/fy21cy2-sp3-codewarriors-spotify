@@ -1,4 +1,4 @@
-# Spotify UI/UX
+# Spotify UI/X
 ## General Info
 Creating webpages using TailwindCSS for Spotify. 
 
