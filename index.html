@@ -9,41 +9,39 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="bg-gray-700 h-screen">
-        <div class="flex h-5/6">
+    <div class="flex flex-col h-screen text-sm text-gray-400">
+        <div class="bg-blue 500 flex-1 flex overflow-y-hidden">
 <!-- left navigation menu -->
-            <div class="bg-gray-900 w-52 h-full flex-none">
-                <div class="mx-2">
-                    <button class="w-full rounded px-3 pt-10 py-2 flex items-center justify-start">
-                        <img src="images/icons/home_white_24dp.svg" alt="home">
-                        <a href="index.html" class="pl-5 text-white">House</a>
-                    </button>
-                    <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                        <img src="images/icons/search_white_24dp.svg" alt="search">
-                        <a href="#" class="pl-5 text-white">Search</a>
-                    </button>
-                    <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                        <img src="images/icons/stacked_bar_chart_white_24dp.svg" alt="library">
-                        <a href="#" class="pl-5 text-white">Library</a>
-                    </button>
-                </div>
-
-                <div>
-                    <h1 class="pl-5 pt-5 text-white">Playlists</h1>
-                    <div class="mx-2">
-                        <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                            <img src="images/icons/add_box_white_24dp.svg" alt="create_playlist">
-                            <a href="#" class="pl-5 text-white">Create Playlist</a>
-                        </button>
-                        <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                            <img src="images/icons/favorite_white_24dp.svg" alt="liked_song">
-                            <a href="#" class="pl-5 text-white">Liked Songs</a>
-                        </button>
+            <div class="sidebar bg-gray-900 w-48 flex-none flex flex-col justify-between font-semibold">
+                <ul class="py-6">
+                    <li class="border-1-4 border-green-600">
+                        <a href="#" class="flex items-center mx-4 mt-4">
+                            <svg class="fill items-center text-white"xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                            <span class="ml-2 text-white">Home</span>
+                    </a>
+                    <a href="#" class="flex items-center mx-4 mt-4">
+                        <svg class="fill items-center text-white"xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <span class="ml-2 text-white">Search</span>
+                    </a>
+                    <a href="#" class="flex items-center mx-4 mt-4">
+                        <svg class="fill items-center text-white"xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10h3v10H6zm0-5h3v4H6zm10 11h3v4h-3zm0-3h3v2h-3zm-5 0h3v7h-3zm0-4h3v3h-3z"/></></g></svg>
+                        <span class="ml-2 group-hover:text-white">Your Library</span>
+                    </a>
+                    </li>
+                </ul>
+                <div class="sidebar-spotify overflow-y-auto px-5 mt-2">
+                    <h3 class="uppercase tracking-widest text-gray-500 font-normal text-xs">Playlist</h3>
+                    <ul class="leading-extra-loose">
+                        <li class="truncate"><a href="#" class="hover:text-white">Create Playlist</a><li>
+                        <li class="truncate"><a href="#" class="hover:text-white">Liked Images</a><li>
+                        <li class="truncate"><a href="#" class="hover:text-white">liked Songs</a><li>
+                        <li class="truncate"><a href="#" class="hover:text-white">Albums</a><li>
+                        <li class="truncate"><a href="#" class="hover:text-white">Artist</a><li>
+                        <li class="truncate"><a href="#" class="hover:text-white">Podcast</a><li>
+                    </ul>
                     </div>
-                </div>
-                <br>
-                <hr>
-                <br>
+                <div class="border-t border-gray-800 h-16 px-4 py-2 flex-items-center group">
+
                 <div class="pl-5 text-white">
                     <ul class="mb-4">
                         <li><a href="playlist1.html">Playlist 1</a></li>
@@ -185,7 +183,7 @@
 
 <!-- footer -->
         <div class="bg-gray-800 flex justify-between items-center w-full h-1/6 px-3 border-t border-dark">
-            <div class="flex items-center">
+            <div class="flex items-center">bottom</div>
                 <img src="images/warriors-logo.jpg" alt="cover" class="w-16 h-16 mr-5">
                 <div>
                     <h1 class="text-sm text-white tracking-wide">Lowlander Remix</h1>
