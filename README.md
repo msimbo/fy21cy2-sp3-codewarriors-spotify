@@ -19,7 +19,7 @@ We split up the work:
 * Header and Play bar of Home Screen, and Playlist Details (David)
 * Side Nav and Body of Home Screen, and Playlist (Gregory)
 
-I collected the different icons from 2 websites, because I wasn't able to all of them in one place. I got most from Google Fonts-Material Icons.
+I collected the different icons from 2 websites, because I wasn't able to grab all of them in one place. I got most from Google Fonts-Material Icons.
 For the album covers, we both love hip hop music, so you'll see a lot of hip hop artists on our pages.
 
 Issues that I ran into were sections overlapping each other. Trying to keep the play bar at the bottom. Took awhile to figure it out.
@@ -30,8 +30,8 @@ We made sure the 2 pages are link correctly.
 After completion, it was uploaded to GitHub and deployed on Vercel.
 
 ## Languages, Tools, Resources
-* JIRA Project Management
 * Balsamiq Wireframes
+* JIRA Project Management
 * HTML
 * CSS
 * PhpStorm
