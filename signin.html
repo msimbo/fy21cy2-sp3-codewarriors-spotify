@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Log In</title>
+</head>
+<body>
+
+    <div class="w-full h-screen flex items-center justify-center bg-black bg-opacity-70 absolute">
+        <!--signin modal-->
+        <div class="flex flex-col">
+            <div id="signin" class="w-96 h-80 round-lg shadow-lg bg-black">
+                <!--header-->
+                <div class="flex justify-center p-3">
+                    <img src="images/spotify_logo_white.png" class="w-36 h-18 p-4">
+                </div>
+                <!--body-->
+                <div class="flex flex-col justify-center text-white">
+                    <div>
+                        <h2 class="flex justify-center">Log in to continue</h2>
+                    </div>
+                    <!--                Input-->
+                    <div class="flex justify-center pb-6">
+                        <input class="w-64 h-8">
+                    </div>
+                    <div class="flex justify-center">
+                        <input class="w-64 h-8">
+                    </div>
+                    <div class="flex justify-center pt-8 pb-6">
+                        <button class="bg-green-500 w-64 p-2 rounded-full">Log In</button>
+                    </div>
+                </div>
+                <!--footer-->
+            </div>
+<!--            bottom half-->
+            <div id="signin" class="w-96 h-80 round-lg shadow-lg bg-black">
+                <!--body-->
+                <div class="flex flex-col justify-center p-1 text-white">
+                    <div class="flex justify-center py-1">
+                        <a href="#"><button bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Facebook</button></a>
+                    </div>
+                    <div class="flex justify-center py-1">
+                        <a href="#"><button class="bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Google</button></a>
+                    </div>
+                    <div class="flex justify-center py-1">
+                        <a href="#"><button class="bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Apple</button></a>
+                    </div>
+                </div>
+                <!--footer-->
+                <div class="flex justify-center pt-5">
+                    <p class="text-white text-sm mr-3">Don't have an account?</p>
+                    <a href="signin.html" class="text-white font-bold text-sm underline">SIGNUP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
