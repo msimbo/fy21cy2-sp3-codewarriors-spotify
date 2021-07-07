@@ -13,47 +13,79 @@
     <div class="w-full h-screen flex items-center justify-center bg-black bg-opacity-70 absolute">
         <!--signin modal-->
         <div class="flex flex-col">
-            <div id="signin" class="w-96 h-80 round-lg shadow-lg bg-black">
+            <div id="signin" class="w-96 h-96 round-lg shadow-lg bg-black">
                 <!--header-->
-                <div class="flex justify-center p-3">
+                <div class="flex justify-center p-2">
                     <img src="images/spotify_logo_white.png" class="w-36 h-18 p-4">
                 </div>
-                <!--body-->
                 <div class="flex flex-col justify-center text-white">
                     <div>
-                        <h2 class="flex justify-center">Log in to continue</h2>
+                        <p class="flex justify-center text-2xl">Log in to continue.</p>
                     </div>
-                    <!--                Input-->
-                    <div class="flex justify-center pb-6">
-                        <input class="w-64 h-8">
-                    </div>
-                    <div class="flex justify-center">
-                        <input class="w-64 h-8">
-                    </div>
-                    <div class="flex justify-center pt-8 pb-6">
-                        <button class="bg-green-500 w-64 p-2 rounded-full">Log In</button>
-                    </div>
+                <!--Input-->
+                    <form>
+                        <div class="flex justify-center py-6">
+                            <input type="text" name="username" id="username" class="bg-gray-800 w-64 h-8 rounded pl-3" placeholder="Email or username">
+                        </div>
+                        <div class="flex justify-center">
+                            <input type="text" name="password" id="password" class="bg-gray-800 w-64 h-8 rounded pl-3" placeholder="Password">
+                        </div>
+
+
+                        <div class="w-64 ml-16 mt-4">
+                            <a href="#" class="text-gray-500 text-sm underline">Reset Password</a>
+                            <div class="flex justify-between items-center py-4">
+                                <p class="text-gray-500 text-sm">Remember me</p>
+                                <img src="images/icons/green-toggle.png" class="w-10 h-10">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <button class="bg-white w-64 p-2 -mb-3 rounded-full text-black">Log In</button>
+                        </div>
+                    </form>
+
                 </div>
-                <!--footer-->
             </div>
-<!--            bottom half-->
-            <div id="signin" class="w-96 h-80 round-lg shadow-lg bg-black">
-                <!--body-->
-                <div class="flex flex-col justify-center p-1 text-white">
+                <!--bottom half-->
+            <div id="signin" class="w-96 h-72 round-lg shadow-lg bg-black">
+
+                <!--break line-->
+                <div class="flex justify-between items-center">
+                    <hr class="w-1/2 ml-16">
+                    <span class="p-1 text-gray-400 mb-1">OR</span>
+                    <hr class="w-1/2 mr-16">
+                </div>
+
+                <!--social media icons-->
+                <div class="flex flex-col justify-center text-white">
                     <div class="flex justify-center py-1">
-                        <a href="#"><button bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Facebook</button></a>
+                        <a href="#"><button class="bg-black border border-gray-50 w-64 p-3 flex justify-start items-center rounded-full text-sm">
+                            <img src="images/icons/fb_icon.svg" class="w-5 h-5">
+                            <h1 class="text-gray-400 ml-5">Continue with Facebook</h1>
+                        </button></a>
                     </div>
                     <div class="flex justify-center py-1">
-                        <a href="#"><button class="bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Google</button></a>
+                        <a href="#"><button class="bg-black border border-gray-50 w-64 p-3 flex justify-start items-center rounded-full text-sm">
+                            <img src="images/icons/google_g_icon.svg" class="w-5 h-5">
+                            <h1 class="text-gray-400 ml-6">Continue with Google</h1>
+                        </button></a>
                     </div>
                     <div class="flex justify-center py-1">
-                        <a href="#"><button class="bg-green-500 w-64 p-3 rounded-full text-sm">Continue with Apple</button></a>
+                        <a href="#"><button class="bg-black border border-gray-50 w-64 p-3 flex justify-start items-center rounded-full text-sm">
+                            <img src="images/icons/apple_icon_gray.svg" class="w-5 h-5">
+                            <h1 class="text-gray-400 ml-7">Continue with Apple</h1>
+                        </button></a>
                     </div>
+
                 </div>
                 <!--footer-->
-                <div class="flex justify-center pt-5">
-                    <p class="text-white text-sm mr-3">Don't have an account?</p>
-                    <a href="signin.html" class="text-white font-bold text-sm underline">SIGNUP</a>
+                <div class="flex justify-center pt-3">
+                    <p class="text-gray-500 text-sm mr-3">Don't have an account?</p>
+                    <a href="signin.html" class="text-gray-400 text-sm underline">SIGNUP</a>
+                </div>
+                <div class="flex justify-center pt-4">
+                    <a href="#" class="text-gray-500 text-sm">SETTINGS</a>
                 </div>
             </div>
         </div>
