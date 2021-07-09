@@ -6,268 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/style.css">
-    <title>Spotify</title>
+    <title>Log In</title>
 </head>
 <body>
-    <div class="bg-gray-900 h-screen">
-        <div class="flex h-5/6">
-<!-- left navigation menu -->
-            <div class="bg-black w-52 h-full flex-none">
-                <div class="mx-2">
-                    <button class="w-full rounded px-3 pt-10 py-2 flex items-center justify-start">
-                        <img src="images/icons/home_white_24dp.svg" alt="home">
-                        <a href="index.html" class="pl-5 text-white">House</a>
-                    </button>
-                    <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                        <img src="images/icons/search_white_24dp.svg" alt="search">
-                        <a href="#" class="pl-5 text-white">Search</a>
-                    </button>
-                    <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                        <img src="images/icons/stacked_bar_chart_white_24dp.svg" alt="library">
-                        <a href="#" class="pl-5 text-white">Library</a>
-                    </button>
-                </div>
 
-                <div>
-                    <h1 class="pl-5 pt-5 text-white">Playlists</h1>
-                    <div class="mx-2">
-                        <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                            <img src="images/icons/add_box_white_24dp.svg" alt="create_playlist">
-                            <a href="#" class="pl-5 text-white">Create Playlist</a>
-                        </button>
-                        <button class="w-full rounded px-3 py-2 flex items-center justify-start">
-                            <img src="images/icons/favorite_white_24dp.svg" alt="liked_song">
-                            <a href="#" class="pl-5 text-white">Liked Songs</a>
-                        </button>
-                    </div>
+    <div class="bg-cover w-full h-screen flex items-center justify-center" style="background-image: url(/images/home-bg-blur.jpg)">
+<!--login-->
+        <div id="login" class="w-96 h-80 round-lg shadow-lg bg-black">
+<!--header-->
+            <div class="flex justify-center p-3">
+                <img src="images/spotify_logo_white.png" class="w-36 h-18 p-4">
+            </div>
+<!--body-->
+            <div class="flex flex-col justify-center text-white">
+                <div class="flex flex-col">
+                    <p class="flex justify-center text-2xl">Millions of songs.</p>
+                    <p class="flex justify-center text-2xl">Free on Spotify.</p>
                 </div>
-                <br>
-                <hr>
-                <br>
-                <div class="pl-5 text-white">
-                    <ul class="mb-4 space-y-5">
-                        <li><a href="playlist1.html">Playlist 1</a></li>
-                        <li><a href="playlist2.html">Playlist 2</a></li>
-                        <li><a href="#">Playlist 3</a></li>
-                        <li><a href="#">Playlist 4</a></li>
-                        <li><a href="#">Playlist 5</a></li>
-                    </ul>
+                <div class="flex justify-center py-8">
+                    <a href="signin.html"><button class="bg-green-500 w-64 p-2 rounded-full">Log In</button></a>
                 </div>
             </div>
-<!-- // end -->
-<!-- main section begin -->
-            <div class="w-full h-full relative">
-<!-- fixed header -->
-                <div class="w-full sticky top-0 py-4 p-6 flex items-center justify-between">
-
-                    <div class="flex items-center">
-                        <!-- arrow_left -->
-                        <button class="bg-black rounded-full w-8 h-8 pl-1 text-white mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <!-- arrow_right -->
-                        <button class="bg-black rounded-full w-8 h-8 pl-1 text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="relative">
-                        <button class="bg-black rounded-full py-1 px-2 flex items-center">
-                            <img src="images/warriors-logo.jpg" alt="logo" class="rounded-full h-6 w-6 mr-2">
-                            <p class="text-white font-bold text-xs mr-2">Code Warriors</p>
-                            <!-- arrow_dropdown -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-<!--                        <div class="w-full text-sm py-2 text-gray-400">-->
-<!--&lt;!&ndash;                            <button class="w-full text-sm py-2 text-lightest hover text-white border-b border-light">Profile</button>&ndash;&gt;-->
-<!--                            <ul class="absolute">-->
-<!--                                <li><a href="#" class="hover:text-white">Profile</a></li>-->
-<!--                                <li><a href="#" class="hover:text-white">Settings</a></li>-->
-<!--                                <li><a href="#" class="hover:text-white">Sign Out</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-                    </div>
-                </div>
-<!--//fixed header end -->
-<!-- body begin -->
-                <div>
-                    <div class="bg-gray-800 px-6 py-3 flex items-center">
-                        <h1 class="font-extrabold text-white hover:underline">Good Afternoon</h1>
-                    </div>
-
-                    <div class="bg-gray-800 grid grid-cols-3 p-14 gap-8 justify-evenly">
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/2001-dr.dre.jpg" alt="dr.dre" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Release Radar</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/mmlp-eminem.jpg" alt="eminem" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Crimetown</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/andthentherewasx-dmx.jpg" alt="dmx" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Discover Weekly</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/butterfly-mariah-carey.jgp.jpeg" alt="mariah-carey" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Daily Mix 1</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/inbetweendreams-jack-johnson.jpeg" alt="jack-johnson" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Daily Mix 2</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 h-20 flex justify-start items-center rounded-md text-white">
-                                <img src="images/covers/abbeyroad-thebeatles.jpg" alt="thebeatles" class="h-20 w-20 mr-5 rounded-tl-md rounded-bl-md">
-                                <h1>Farewell</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="bg-gray-900 px-6 py-3 flex items-center justify-between">
-                            <h1 class="font-extrabold text-white hover:underline">Your heavy rotation</h1>
-                            <a href="#" class="font-semibold text-white capitalize hover:underline">See More</a>
-                        </div>
-
-
-                    <div class="bg-gray-900 flex p-6 gap-8 justify-evenly">
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 w-52 h-64 flex flex-col rounded-md text-white">
-                                <img src="images/covers/starboy-the-weeknd.jpg" alt="theweeknd" class="h-50 w-50 p-4 items-center">
-                                <h1 class="pl-4 text-left">Starboy</h1>
-                                <h4 class="pl-4 pb-4 text-left">The Weeknd</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 w-52 h-64 flex flex-col rounded-md text-white">
-                                <img src="images/covers/beyonce.jpg" alt="beyonce" class="h-50 w-50 p-4 items-center">
-                                <h1 class="pl-4 text-left">Beyonce</h1>
-                                <h4 class="pl-4 pb-4 text-left">Beyonce</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 w-52 h-64 flex flex-col rounded-md text-white">
-                                <img src="images/covers/justwhitney-whitney-houston.jpg" alt="whitney-houston" class="h-50 w-50 p-4 items-center">
-                                <h1 class="pl-4 text-left">Just Whitney</h1>
-                                <h4 class="pl-4 pb-4 text-left">Whitney</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 w-52 h-64 flex flex-col rounded-md text-white">
-                                <img src="images/covers/thecollegedropout-kanye-west.jpg" alt="kanye" class="h-50 w-50 p-4 items-center">
-                                <h1 class="pl-4 text-left">The College Dropout</h1>
-                                <h4 class="pl-4 pb-4 text-left">Kanye West</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="bg-gray-500 bg-opacity-20 w-52 h-64 flex flex-col rounded-md text-white">
-                                <img src="images/covers/thriller-michael-jackson.jpg" alt="michael-jackson" class="h-50 w-50 p-4 items-center">
-                                <h1 class="pl-4 text-left">Thriller</h1>
-                                <h4 class="pl-4 pb-4 text-left">Michael Jackson</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--footer-->
+            <div class="flex justify-center">
+                <p class="text-gray-500 mr-3 text-sm">Don't have an account?</p>
+                <a href="signin.html" class="text-gray-400 text-sm underline">SIGNUP</a>
             </div>
-<!--//body end -->
-<!--do not delete below-->
         </div>
     </div>
 
-<!-- footer -->
-        <div class="bg-gray-800 flex justify-between items-center w-full h-1/6 px-3 border-t border-dark">
-            <div class="flex items-center">
-                <img src="images/warriors-logo.jpg" alt="cover" class="w-16 h-16 mr-5">
-                <div>
-                    <h1 class="text-sm text-white tracking-wide">Lowlander Remix</h1>
-                    <h1 class="text-xs text-white tracking-wide">Botanicals</h1>
-                </div>
-
-                <button>
-                    <!-- heart -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-5 text-white hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="flex flex-col justify-center w-1/2 items-center">
-                <div class="flex items-center">
-
-                    <button class="mx-5">
-                        <a href="#"><img src="images/icons/shuffle_white_24dp.svg" alt="shuffle"></a>
-                    </button>
-
-                    <button>
-                        <a href="#"><img src="images/icons/skip_previous_white_24dp.svg" alt="skip_previous"></a>
-                    </button>
-
-                    <button class="rounded-full h-8 w-8 flex items-center justify-center mx-5 border-lightest border test-lightest">
-                        <a href="#"><img src="images/icons/play_circle_filled_white_24dp.svg" alt="play"></a>
-                    </button>
-
-                    <button>
-                        <a href="#"><img src="images/icons/skip_next_white_24dp.svg" alt="skip_next"></a>
-                    </button>
-
-                    <button class="mx-5 text-lightest">
-                        <!-- repeat -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="w-full flex flex-col">
-                    <div class="w-full h-1 bg-gray-600 rounded-full mt-4 flex items-center">
-                        <div class="h-1 w-1/6 rounded-full bg-green-200"></div>
-                        <div class="h-3 w-3 bg-white rounded-full -ml-1 shadow"></div>
-                        </div>
-                </div>
-            </div>
-
-
-            <div class="flex items-center">
-                <button class="mr-5">
-                    <a href="#"><img src="images/icons/playlist_play_white_24dp.svg" alt="playlist"></a>
-                </button>
-
-                <button class="mr-5">
-                    <a href="#"><img src="images/icons/important_devices_white_24dp.svg" alt="devices"></a>
-                </button>
-
-                <button class="mr-5">
-                    <!-- volume -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                    </svg>
-                </button>
-                <div class="w-20 h-1 -ml-3 bg-gray-500 rounded-full"></div>
-
-                <button class="ml-5">
-                    <a href="#"><img src="images/icons/open_in_full_white_24dp.svg" alt="fullscreen"></a>
-                </button>
-            </div>
-        </div>
-
-
-    </div>
+<script src="app.js"></script>
 </body>
 </html>
