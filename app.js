@@ -1,11 +1,10 @@
-// variables
-
 // create the pop-up window
 // const login = document.querySelector('#login')
 // const signin = document.querySelector('#signin')
 
-// username, password, button
 
+// variables
+// username, password, button
 const username = document.querySelector('#username');
 const password = document.querySelector('#password');
 const form = document.querySelector('#btn');
@@ -20,14 +19,18 @@ form.addEventListener('submit', (e) => {
 });
 
 function validate() {
-    const usernameValue = username.value.trim();
-    const passwordValue = password.value.trim();
 
-    if (usernameValue === '' || passwordValue === "") {
+    if (username.value.trim() === '' || password.value === "") {
         alert('Do not leave blank');
         return false;
+    } else if (username.value.trim().length<6) {
+        alert('Username need to be greater than 6 characters');
+        return false;
+    } else if (password.value.trim().length<8) {
+        alert('Password need to be greater than 8 characters');
+        return false;
     } else {
-        true;
+        return true;
     }
 }
 
